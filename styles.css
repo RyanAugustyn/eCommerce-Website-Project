@@ -16,6 +16,26 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    height: 6vh;
+    border-bottom-style: solid;
+}
+
+.top-bar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.top-bar ul li{
+    margin: 0 1rem;
+}
+
+.top-bar ul li a {
+    text-decoration: none;
+    color: black;
 }
 
 .top-logo{
@@ -24,20 +44,55 @@ html {
     align-items: center;
 }
 
-.top-logo-img {
-    height: 50px;
-    width: 50px;
+.top-logo p {
+    font-size: 2rem;
+}
+
+.top-logo img {
+    height: 2rem;
+    width: 2rem;
     object-fit: scale-down;
 }
 
-header{
-    height: 15vh;
+.right-nav{
+    display: flex;
+}
+.search-bar{
+    display: flex;
+    position: relative;
+}
+
+.search-box {
+    width: 16rem;
+    border-style: solid;
+    border-color: black;
+}
+
+.search-icon{
+    height: 1.2rem;
+    width: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+}
+
+.cart{
+    margin-left: 1rem;
+    background-color: white;
+    border: none;
+    background: none;
 }
 
 .splash{
     position: relative;
     width: 100vw;
-    height: 30vh;
+    height: 10vh;
+}
+
+.splash img{
+    width: 100vw;
+    height: 40vh;
 }
 
 
