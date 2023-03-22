@@ -8,18 +8,18 @@
     <title>CaraCara</title>
 </head>
 <body>
-    <header class="top-bar">
+    <header class="top-bar" id="home">
         <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PRODUCTS</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#products">PRODUCTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
         <div class="top-logo">
             <p>CARA</p>
-            <img src="/assets/icons8-pottery-96.png" alt="Cara Icon">
+            <a href="#home"><img src="/assets/icons8-pottery-96.png" alt="Cara Icon"></a>
             <p>CARA</p>
         </div>
         <div class="right-nav">
@@ -34,48 +34,56 @@
     <main>
     <section class="splash">
         <p class="splash-p1">CERAMICS CRAFTED BY HAND...</p>
-        <div class ="splash-img">
-            <img src="/assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg" alt="hands sculpting a clay pot">
-        </div>
+        <img class ="splash-img" src="/assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg" alt="hands sculpting a clay pot">
         <p class="splash-p2">...FROM THE GROUND UP</p>
     </section>
     <section class="about-us">
-        <h2>ABOUT US</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero id
-            faucibus nisl tincidunt. Facilisis mauris sit amet massa. Senectus et netus et malesuada fames
-            ac turpis egestas maecenas. Odio aenean sed adipiscing diam donec adipiscing tristique
-            risus nec. Sagittis id consectetur purus ut faucibus. Elit duis tristique sollicitudin nibh sit
-            amet commodo.
-        </p>
-        <p>Nulla porttitor massa id neque aliquam
-            vestibulum morbi. Facilisi nullam vehicula
-            ipsum a arcu cursus vitae congue. Nam libero
-            justo laoreet sit amet cursus sit amet dictum.
-            Tristique magna sit amet purus gravida quis.
-            Velit euismod in pellentesque massa placerat.
-            In ante metus dictum at tempor commodo.
-            Libero nunc consequat interdum varius sit
-            amet mattis. Egestas sed sed risus pretium
-            quam vulputate dignissim. Diam phasellus
-            vestibulum lorem sed risus. Cursus sit amet
-            dictum sit amet justo donec enim.
-        </p>
-        <p>Tincidunt praesent semper feugiat nibh sed.
-            Vulputate mi sit amet mauris commodo quis
-            imperdiet massa. Amet tellus cras adipiscing
-            enim eu turpis egestas pretium aenean.
-            Nullam ac tortor vitae purus
-        </p>
-        <img src="/assets/Cylinder_unglazed3_2048x2048.jpg" alt="large unglazed plant container">
-        <img src="/assets/Vase_Dame_2048x2048.jpg" alt="vase with flower">
+        <div class="about-top">
+            <h2 id="about">ABOUT US</h2>
+            <div></div>
+        </div>
+        <div class="about-content">
+            <div class="about-left-content">
+                <p class="about-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero id
+                    faucibus nisl tincidunt. Facilisis mauris sit amet massa. Senectus et netus et malesuada fames
+                    ac turpis egestas maecenas. Odio aenean sed adipiscing diam donec adipiscing tristique
+                    risus nec. Sagittis id consectetur purus ut faucibus. Elit duis tristique sollicitudin nibh sit
+                    amet commodo.
+                </p>
+                <img src="/assets/Vase_Dame_2048x2048.jpg" alt="vase with flower">
+                <p class="about-p2">Nulla porttitor massa id neque aliquam
+                    vestibulum morbi. Facilisi nullam vehicula
+                    ipsum a arcu cursus vitae congue. Nam libero
+                    justo laoreet sit amet cursus sit amet dictum.
+                    Tristique magna sit amet purus gravida quis.
+                    Velit euismod in pellentesque massa placerat.
+                    In ante metus dictum at tempor commodo.
+                    Libero nunc consequat interdum varius sit
+                    amet mattis. Egestas sed sed risus pretium
+                    quam vulputate dignissim. Diam phasellus
+                    vestibulum lorem sed risus. Cursus sit amet
+                    dictum sit amet justo donec enim.
+                </p>
+                <p class="about-p3">Tincidunt praesent semper feugiat nibh sed.
+                    Vulputate mi sit amet mauris commodo quis
+                    imperdiet massa. Amet tellus cras adipiscing
+                    enim eu turpis egestas pretium aenean.
+                    Nullam ac tortor vitae purus
+                </p>
+                
+            </div>
+            <div class="about-right-content">
+                <img src="/assets/Cylinder_unglazed3_2048x2048.jpg" alt="large unglazed plant container">
+            </div>
+        </div>
     </section>
     <section>
-        <h2>OUR PRODUCTS</h2>
+        <h2 id="products">OUR PRODUCTS</h2>
         <div class="products"></div>
     </section>
     <section>
-        <h2>CONTACT US</h2>
+        <h2 id="contact">CONTACT US</h2>
         <h3>EMAIL</h3>
         <input type="text">
         <h3>MESSAGE</h3>

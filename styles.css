@@ -87,14 +87,15 @@ html {
 .splash{
     position: relative;
     width: 100vw;
-    height: 37.8rem;
+    height: 50vh;
     background-color: black;
 }
 
 .splash-img{
     width: 100%;
     height: 100%;
-    opacity: 65%;
+    opacity: 60%;
+    object-fit:contain;
 }
 
 
@@ -124,4 +125,63 @@ html {
 .about-us{
     margin-top: 5rem;
     display: flex;
+    flex-direction: column;
+    
+}
+
+.about-top{
+    display: flex; 
+    height: 5vh;
+    margin-bottom: 5rem;
+}
+.about-top h2{
+    border-bottom-style: solid;
+    width: 50vw;
+}
+
+.about-content{
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    
+}
+
+.about-left-content{
+    display: grid;
+    width: 50vw;
+    grid-template-columns: [first] 50% [middle] auto [end] ;
+    grid-template-rows: [first] 30% [second] 30% [third] auto [end];
+}
+
+.about-left-content img {
+    height: 100%;
+    width: auto;
+    grid-column: first/middle;
+}
+
+.about-p1 {
+    grid-column: first/ end;
+    grid-row: first/second;
+}
+
+.about-p2 {
+    grid-column: middle/ end;
+    grid-row: second/third;
+}
+
+.about-p3 {
+    grid-column: middle/ end;
+    grid-row: third/end;
+}
+
+.about-right-content{
+    display: flex;
+    width: 50vw;
+}
+
+.about-right-content img {
+    height: 100%;
+    width: 100%;
+    transform: scaleX(-1);
+    object-fit: contain;
 }
