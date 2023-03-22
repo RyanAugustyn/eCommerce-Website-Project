@@ -288,18 +288,60 @@ html {
     justify-content: center;
 }
 
-.contact-info input {
-    width: 50vw;
-    justify-content: center;
+.email-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
     margin-bottom: 3rem;
 }
 
-.contact-info textarea {
+.message-box {
     width: 50vw;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20%;
 }
 
 .contact-info button {
-    align-content: end;
+    margin-left: 65%;
     width: 5rem;
+    color: white;
+    background-color: green;
+}
+
+footer {
+    background-color: green;
+    margin-top: 3rem;
+    margin-bottom: 5rem; /* REMOVE */
+}
+
+.footer-row1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-row1 div img {
+    height: 5rem;
+}
+
+.footer-row2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 17%;
+}
+
+.footer-row2-text {
+    display: flex;
+    justify-content: space-betweenq;
+}
+
+.copyright {
+    font-size: .8rem;
 }
